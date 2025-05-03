@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production  # ✅ NEW: specify environment name
 
     steps:
     - name: Trigger Render Deploy Hook
